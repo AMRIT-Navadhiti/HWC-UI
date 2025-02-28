@@ -23,31 +23,32 @@
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
-const commonIP = 'https://commonurl2025.loca.lt';  //8083
-const identityIP = 'https://identityurl2025.loca.lt'; //8094
-const tmIP = 'https://tmurl2025.loca.lt'; // 8089
+
+const commonIP = 'https://1whdzc8g-8083.inc1.devtunnels.ms';  //8083
+const identityIP = 'https://1whdzc8g-8094.inc1.devtunnels.ms'; //8094
+const tmIP = 'https://amritwprdev.piramalswasthya.org';
 const IP104 = 'https://amritwprdev.piramalswasthya.org';
 const mmuIP = 'https://amritwprdev.piramalswasthya.org';
 const schedulerIP = 'https://amritwprdev.piramalswasthya.org';
-const adminIP = 'https://adminurl2025.loca.lt';
-const inventoryUI_IP = 'http://localhost:57508/';  //8083';
+const adminIP = 'https://amritwprdev.piramalswasthya.org';
+const inventoryUI_IP = 'http://localhost:53431/';  //8083';
 
-const FHIRIP = 'https://fhirurl2025.loca.lt';
-const SERVER_IP = '192.168.1.60';
-const SWYMED_IP = '192.168.1.60';
+const FHIRIP = 'https://amritwprdev.piramalswasthya.org';
+const SERVER_IP = '10.208.122.39';
+const SWYMED_IP = '14.143.13.109';
 
 // Without API MAN Configuration
-const COMMON_API_OPEN = `${commonIP}/`;
-const COMMON_API = `${commonIP}/`;
-const IDENTITY_API = `${identityIP}/`;
-const TM_API = `${tmIP}/`;
+const COMMON_API_OPEN = `${commonIP}/commonapi-v1.0/`;
+const COMMON_API = `${commonIP}/commonapi-v1.0/`;
+const IDENTITY_API = `${identityIP}/identity-0.0.1/`;
+const TM_API = `${tmIP}/hwc-facility-service/`;
 
 const API104 = `${IP104}/104api-v1.0/`;
 const MMU_API = `${mmuIP}/mmuapi-v1.0/`;
-const COMMON_API_OPEN_SYNC = `http://${SERVER_IP}/`;
+const COMMON_API_OPEN_SYNC = `http://${SERVER_IP}:8080/commonapi-v1.0/`;
 const SCHEDULER_API = `${schedulerIP}/schedulerapi-v1.0/`;
 const mmuUICasesheet = 'http://localhost:4200/';
-const ADMIN_API = `${adminIP}/`;
+const ADMIN_API = `${adminIP}/adminapi-v1.0/`;
 
 const IOT_API = 'http://localhost:8085/ezdx-hub-connect-srv';
 

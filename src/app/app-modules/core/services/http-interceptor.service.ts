@@ -39,7 +39,8 @@ export class HttpInterceptorService implements HttpInterceptor {
       modifiedReq = req.clone({
         headers: req.headers
           .set('Authorization', key)
-          .set('Content-Type', 'application/json'),
+          .set('Content-Type', 'application/json')
+          .set('bypass-tunnel-reminder','true'),
       });
     } else {
       modifiedReq = req.clone({

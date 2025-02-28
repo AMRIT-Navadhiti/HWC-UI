@@ -119,7 +119,7 @@ Note: After changing environment variables, please restart your system and check
 6. Once node module is installed successfully, then run the project using below command:
       ng serve
 
-By default your application will be available at ‘http://localhost:4200/’. You can access it in your browser.
+By default your application will be available at ‘http://localhost:4204/’. You can access it in your browser.
 
 
 ### Building war files
