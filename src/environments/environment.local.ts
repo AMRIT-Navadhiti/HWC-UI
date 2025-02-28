@@ -23,40 +23,40 @@
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
-
-const commonIP = 'https://1whdzc8g-8083.inc1.devtunnels.ms';  //8083
-const identityIP = 'https://1whdzc8g-8094.inc1.devtunnels.ms'; //8094
-const tmIP = 'https://amritwprdev.piramalswasthya.org';
+const commonIP = 'https://commonurl2025.loca.lt'; //8083
+const identityIP = 'https://identityurl2025.loca.lt'; //8094
+const tmIP = 'https://tmurl2025.loca.lt'; // 8089
 const IP104 = 'https://amritwprdev.piramalswasthya.org';
 const mmuIP = 'https://amritwprdev.piramalswasthya.org';
 const schedulerIP = 'https://amritwprdev.piramalswasthya.org';
-const adminIP = 'https://amritwprdev.piramalswasthya.org';
-const inventoryUI_IP = 'http://localhost:53431/';  //8083';
+const adminIP = 'https://adminurl2025.loca.lt';
+const inventoryUI_IP = 'http://localhost:57508/'; //8083';
 
-const FHIRIP = 'https://amritwprdev.piramalswasthya.org';
-const SERVER_IP = '10.208.122.39';
-const SWYMED_IP = '14.143.13.109';
+const FHIRIP = 'https://fhirurl2025.loca.lt';
+const SERVER_IP = '192.168.1.60';
+const SWYMED_IP = '192.168.1.60';
 
 // Without API MAN Configuration
-const COMMON_API_OPEN = `${commonIP}/commonapi-v1.0/`;
-const COMMON_API = `${commonIP}/commonapi-v1.0/`;
-const IDENTITY_API = `${identityIP}/identity-0.0.1/`;
-const TM_API = `${tmIP}/hwc-facility-service/`;
+const COMMON_API_OPEN = `${commonIP}/`;
+const COMMON_API = `${commonIP}/`;
+const IDENTITY_API = `${identityIP}/`;
+const TM_API = `${tmIP}/`;
 
 const API104 = `${IP104}/104api-v1.0/`;
 const MMU_API = `${mmuIP}/mmuapi-v1.0/`;
-const COMMON_API_OPEN_SYNC = `http://${SERVER_IP}:8080/commonapi-v1.0/`;
+const COMMON_API_OPEN_SYNC = `http://${SERVER_IP}/`;
 const SCHEDULER_API = `${schedulerIP}/schedulerapi-v1.0/`;
 const mmuUICasesheet = 'http://localhost:4200/';
-const ADMIN_API = `${adminIP}/adminapi-v1.0/`;
+const ADMIN_API = `${adminIP}/`;
+const IOT_API = 'http://localhost:8095/ezdx-hub-connect-srv';
 
-const IOT_API = 'http://localhost:8085/ezdx-hub-connect-srv';
-
-const FHIR_API = `${FHIRIP}/fhirapi-v1.0/`;
+const FHIR_API = `${FHIRIP}:8093/`;
+const sessionStorageEncKey = '';
 
 export const environment = {
   production: false,
   app: `MMU`,
+  encKey: sessionStorageEncKey,
   RBSTest: `RBS Test`,
   visualAcuityTest: `Visual Acuity Test`,
   haemoglobinTest: `Hemoglobin Test`,
@@ -70,11 +70,10 @@ export const environment = {
 
   parentAPI: `${TM_API}`,
 
-  INVENTORY_URL: inventoryUI_IP + '/hwc-inventory/#/redirin?',
+  INVENTORY_URL: inventoryUI_IP + ':4207/#/redirin?',
   fallbackUrl: '/pharmacist/redirfallback',
   redirInUrl: '/pharmacist/redirin',
-  TELEMEDICINE_URL: schedulerIP + '/hwc-scheduler/#/?',
-
+  TELEMEDICINE_URL: schedulerIP + ':4206/#/?',
   fallbackMMUUrl: `/logout-tm`,
   redirInMMUUrl: `/nurse-doctor/tcspecialist-worklist`,
 
@@ -545,4 +544,5 @@ export const environment = {
   requestOtpForLogin: `${FHIR_API}abhaLogin/abhaLoginRequestOtp`,
   verifyOtpForLogin: `${FHIR_API}abhaLogin/verifyAbhaLogin`,
   printPngCard: `${FHIR_API}abhaCreation/printAbhaCard`,
+  printWebLoginPhrCard: `${FHIR_API}abhaLogin/printWebLoginPhrCard`,
 };
