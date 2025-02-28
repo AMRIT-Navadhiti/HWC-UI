@@ -64,6 +64,8 @@ export class ServiceComponent implements OnInit, DoCheck {
                 this.serviceDetails,
               );
             } else if (designation === 'TC Specialist') {
+              this.getDemographics();
+
               this.checkRoleAndDesingnationMappedForservice(
                 this.loginDataResponse,
                 this.serviceDetails,
@@ -131,8 +133,10 @@ export class ServiceComponent implements OnInit, DoCheck {
   }
 
   selectService(service: any) {
+    console.log('ENtered selectService');
+
     localStorage.setItem('providerServiceID', service.providerServiceID);
-    console.log(localStorage.getItem('provideServiceID'));
+    console.log('------------------', localStorage.getItem('provideServiceID'));
     localStorage.setItem('serviceName', service.serviceName);
     localStorage.setItem('serviceID', service.serviceID);
     sessionStorage.setItem('apimanClientKey', service.apimanClientKey);

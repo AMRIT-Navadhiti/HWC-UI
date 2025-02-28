@@ -40,7 +40,7 @@ export class HttpInterceptorService implements HttpInterceptor {
         headers: req.headers
           .set('Authorization', key)
           .set('Content-Type', 'application/json')
-          .set('bypass-tunnel-reminder','true'),
+          .set('bypass-tunnel-reminder', 'true'),
       });
     } else {
       modifiedReq = req.clone({

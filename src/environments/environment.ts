@@ -23,14 +23,14 @@
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
-const commonIP = 'https://commonurl2025.loca.lt';  //8083
+const commonIP = 'https://commonurl2025.loca.lt'; //8083
 const identityIP = 'https://identityurl2025.loca.lt'; //8094
 const tmIP = 'https://tmurl2025.loca.lt'; // 8089
 const IP104 = 'https://amritwprdev.piramalswasthya.org';
 const mmuIP = 'https://amritwprdev.piramalswasthya.org';
 const schedulerIP = 'https://amritwprdev.piramalswasthya.org';
 const adminIP = 'https://adminurl2025.loca.lt';
-const inventoryUI_IP = 'http://localhost:57508/';  //8083';
+const inventoryUI_IP = 'http://localhost:57508/'; //8083';
 
 const FHIRIP = 'https://fhirurl2025.loca.lt';
 const SERVER_IP = '192.168.1.60';
