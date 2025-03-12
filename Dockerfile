@@ -15,7 +15,7 @@ RUN npm install --legacy-peer-deps
 COPY . .
 
 # Copy environment file
-RUN cp src/environments/environment.local.ts src/environments/environment.ts
+COPY src/environments/environment.local.ts src/environments/environment.ts
 
 # Expose port (change if your project uses a different port)
 EXPOSE 4204
